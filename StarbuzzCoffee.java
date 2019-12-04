@@ -38,5 +38,11 @@ public class StarbuzzCoffee {
         Beverage beverage5 = new Espresso();
         beverage5 = new Espresso(beverage5);
         System.out.println("double " + beverage5.getDescription() + " $" + beverage5.cost());
+
+        Beverage beverage6 = new Espresso();
+        beverage6 = new Espresso(beverage6);
+        beverage6 = new Whip(beverage6);
+        beverage6 = new Oreo(beverage6);
+        System.out.println("double " + beverage6.getDescription() + " $" + beverage6.cost());
     }
 }
